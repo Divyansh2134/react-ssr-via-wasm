@@ -6,11 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-so firstly do for installing all node dependecy and node module .
-
 ### `npm install` 
 
-then you can do 
+For installing all node dependecy and node module .
 
 ### `npm start`
 
@@ -19,6 +17,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run build`
+
+for building the react project for production purpose
+
+### `npm run webpack:build-server`
+
+### `npm run rollup:build-server`
 
 ### `npm test`
 
@@ -45,32 +51,34 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## project setup 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After cloning the repo you go inside the root directory firstly install all dependency by this command 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm install`
 
-### Code Splitting
+and then you have to setup wasmedge you can go to [https://wasmedge.org/docs/start/getting-started/quick_start] link and also [https://wasmedge.org/docs/develop/javascript/hello_world] for installing wasmedge
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+and then run this command for building the project as
 
-### Analyzing the Bundle Size
+### `npm run buid`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+now after building the project build it via webpack
 
-### Making a Progressive Web App
+### `npm run webpack:build-server`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+and then build the server/index.js via rollup with command 
 
-### Advanced Configuration
+### `npm run rollup:build-server`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+now you can see the server-build directory go inside it via command
 
-### Deployment
+### `cd server-build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+then start the server via wasmedge with comamnd 
 
-### `npm run build` fails to minify
+### `wasmedge --dir .:. ../wasmedge_quickjs.wasm index.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Impertant
+ I am new to writing readme file and also to coding and dont know some things i'll update all these things as i understand more.
